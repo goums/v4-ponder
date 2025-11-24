@@ -8,27 +8,36 @@ export default createConfig({
 		mainnet: {
 			id: 1,
 			rpc: process.env.PONDER_RPC_URL_1,
-			maxRequestsPerSecond: 200,
 		},
 		unichain: {
 			id: 130,
 			rpc: process.env.PONDER_RPC_URL_130,
-			maxRequestsPerSecond: 200,
 		},
 		optimism: {
 			id: 10,
 			rpc: process.env.PONDER_RPC_URL_10,
-			maxRequestsPerSecond: 200,
 		},
 		base: {
 			id: 8453,
 			rpc: process.env.PONDER_RPC_URL_8453,
-			maxRequestsPerSecond: 200,
 		},
 		arbitrum: {
 			id: 42161,
 			rpc: process.env.PONDER_RPC_URL_42161,
-			maxRequestsPerSecond: 200,
+		},
+
+		// Testnets
+		ethereum_sepolia: {
+			id: 11155111,
+			rpc: process.env.PONDER_RPC_URL_11155111,
+		},
+		base_sepolia: {
+			id: 84532,
+			rpc: process.env.PONDER_RPC_URL_84532,
+		},
+		arbitrum_sepolia: {
+			id: 421614,
+			rpc: process.env.PONDER_RPC_URL_421614,
 		},
 	},
 	contracts: {
@@ -58,6 +67,23 @@ export default createConfig({
 					address: "0x498581ff718922c3f8e6a244956af099b2652b2b",
 					startBlock: 25_500_000,
 					endBlock: 28_500_000,
+				},
+
+				// Testnets
+				ethereum_sepolia: {
+					address: "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+					startBlock: 7_258_946,
+					endBlock: 9_500_000,
+				},
+				base_sepolia: {
+					address: "0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408",
+					startBlock: 19_088_197,
+					endBlock: 20_500_000,
+				},
+				arbitrum_sepolia: {
+					address: "0xFB3e0C6F74eB1a21CC1Da29aeC80D2Dfe6C9a317",
+					startBlock: 10_590_922,
+					endBlock: 15_500_000,
 				},
 			},
 			abi: PoolManagerAbi,
