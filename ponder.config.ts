@@ -25,6 +25,11 @@ export default createConfig({
 			rpc: process.env.PONDER_RPC_URL_8453,
 			maxRequestsPerSecond: 200,
 		},
+		arbitrum: {
+			id: 42161,
+			rpc: process.env.PONDER_RPC_URL_42161,
+			maxRequestsPerSecond: 200,
+		},
 	},
 	contracts: {
 		PoolManager: {
@@ -38,6 +43,11 @@ export default createConfig({
 					address: "0x1f98400000000000000000000000000000000004",
 					startBlock: 0,
 					endBlock: 15_500_000,
+				},
+				arbitrum: {
+					address: "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
+					startBlock: 297_842_872,
+					endBlock: 320_000_000,
 				},
 				optimism: {
 					address: "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
