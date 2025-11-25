@@ -21,10 +21,10 @@ export default createConfig({
 			id: 8453,
 			rpc: process.env.PONDER_RPC_URL_8453,
 		},
-		arbitrum: {
+		/*	arbitrum: {
 			id: 42161,
 			rpc: process.env.PONDER_RPC_URL_42161,
-		},
+		},*/
 
 		// Testnets
 		/*	ethereum_sepolia: {
@@ -53,11 +53,11 @@ export default createConfig({
 					startBlock: 0,
 					// endBlock: 15_500_000,
 				},
-				arbitrum: {
+				/*arbitrum: {
 					address: "0x360e68faccca8ca495c1b759fd9eee466db9fb32",
 					startBlock: 297_842_872,
 					// endBlock: 320_000_000,
-				},
+				},*/
 				optimism: {
 					address: "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
 					startBlock: 131_000_000,
